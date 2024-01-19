@@ -25,3 +25,65 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.input-container {
+  background-color: #5656ce;
+}
+
+.basic-container {
+  padding: 25px;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  input {
+    margin: 3px;
+    border-radius: 10px;
+    color: black;
+    padding: 4px;
+  }
+  a {
+    margin: 3px;
+  }
+}
+
+.results {
+  background-color: #77878f;
+  overflow-x: scroll;
+}
+
+.results-div {
+  display: flex;
+  p {
+    border: 1px solid #444444;
+    padding: 3px;
+    overflow-x: hidden;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+}
+
+.border {
+  border: 3px solid #343434;
+  min-width: 450px;
+}
+
+.padding-main {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+@media (max-width: 760px) {
+  .padding-main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
