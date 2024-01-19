@@ -87,3 +87,11 @@ body {
     padding-right: 0;
   }
 }
+
+.width-10-percent {
+  width: 10%;
+}
+
+.width-30-percent {
+  width: 30%;
+}

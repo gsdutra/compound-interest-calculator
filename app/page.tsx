@@ -75,17 +75,17 @@ export default function Home() {
         <a>Rendimentos:</a>
         <div className="border">
           <div className='results-div'>
-              <p Style="width: 10%;">Mês:</p>
-              <p Style="width: 30%;">Valor total investido:</p>
-              <p Style="width: 30%;">Rendimentos:</p>
-              <p Style="width: 30%;">Valor total:</p>
+              <p className='width-10-percent'>Mês:</p>
+              <p className='width-30-percent'>Valor total investido:</p>
+              <p className='width-30-percent'>Rendimentos:</p>
+              <p className='width-30-percent'>Valor total:</p>
             </div>
           {calculateIncome().map((e:Rendimentos, i: number)=>(
             <div className='results-div' key={i}>
-              <p Style="width: 10%;"> {e.month} </p>
-              <p Style="width: 30%;"> {e.moneyInvested.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
-              <p Style="width: 30%;"> {e.moneyFromInterest.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
-              <p Style="width: 30%;"> {e.moneyTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
+              <p className='width-10-percent'> {e.month} </p>
+              <p className='width-30-percent'> {e.moneyInvested.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
+              <p className='width-30-percent'> {e.moneyFromInterest.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
+              <p className='width-30-percent'> {e.moneyTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
             </div>
           ))}
         </div>
